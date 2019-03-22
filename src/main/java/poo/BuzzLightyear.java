@@ -6,6 +6,15 @@ import java.util.concurrent.TimeUnit;
 public class BuzzLightyear {
 
     private boolean estadoCapacete = false;
+    private boolean estadoAsas = false;
+
+    public boolean getEstadoAsas() {
+        return estadoAsas;
+    }
+
+    public void setEstadoAsas(boolean estadoAsas) {
+        this.estadoAsas = estadoAsas;
+    }
 
     public boolean getEstadoCapacete() {
         return estadoCapacete;
@@ -15,8 +24,27 @@ public class BuzzLightyear {
         this.estadoCapacete = estadoCapacete;
     }
 
+    public void abrirAsas(){
+        if (getEstadoAsas() == false){
+            System.out.println("Asas abertas!");
+            setEstadoAsas(true);
+        }else {
+            System.out.println("As asas já estão abertas!");
+        }
+    }
+
+    public void fecharAsas(){
+        if (getEstadoAsas() == true){
+            System.out.println("Asas fechadas!");
+            setEstadoAsas(false);
+        }else {
+            System.out.println("As asas já estão fechadas!");
+        }
+    }
+
+
     public void abrirCapacete(){
-        if (estadoCapacete == false){
+        if (getEstadoCapacete() == false){
             System.out.println("Capacete aberto!");
             setEstadoCapacete(true);
         }else {
@@ -25,7 +53,7 @@ public class BuzzLightyear {
     }
 
     public void fecharCapacete(){
-        if (estadoCapacete == true){
+        if (getEstadoCapacete() == true){
             System.out.println("Capacete fechado!");
             setEstadoCapacete(false);
         }else {
