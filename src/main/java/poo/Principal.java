@@ -9,7 +9,14 @@ public class Principal {
 
         //buzz1.disparaLaser();
 
-        buzz1.falas();
+        //buzz1.falas();
+
+        System.out.println(buzz1.getEstadoCapacete());
+        buzz1.abrirCapacete();
+        buzz1.abrirCapacete();
+        System.out.println(buzz1.getEstadoCapacete());
+        buzz1.fecharCapacete();
+        buzz1.fecharCapacete();
     }
 
 

@@ -5,6 +5,34 @@ import java.util.concurrent.TimeUnit;
 
 public class BuzzLightyear {
 
+    private boolean estadoCapacete = false;
+
+    public boolean getEstadoCapacete() {
+        return estadoCapacete;
+    }
+
+    public void setEstadoCapacete(boolean estadoCapacete) {
+        this.estadoCapacete = estadoCapacete;
+    }
+
+    public void abrirCapacete(){
+        if (estadoCapacete == false){
+            System.out.println("Capacete aberto!");
+            setEstadoCapacete(true);
+        }else {
+            System.out.println("O capacete já esta aberto!");
+        }
+    }
+
+    public void fecharCapacete(){
+        if (estadoCapacete == true){
+            System.out.println("Capacete fechado!");
+            setEstadoCapacete(false);
+        }else {
+            System.out.println("O capacete já esta fechado!");
+        }
+    }
+
     public void disparaLaser() throws InterruptedException {
         System.out.println("Atenção, mirando!!!");
         TimeUnit.SECONDS.sleep(2);
