@@ -7,6 +7,10 @@ public class Principal {
 
         BuzzLightyear buzz1 = new BuzzLightyear();
 
-        buzz1.disparaLaser();
+        //buzz1.disparaLaser();
+
+        buzz1.falas();
     }
+
+
 }
