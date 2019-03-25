@@ -24,6 +24,12 @@ public class BuzzLightyear {
         this.estadoCapacete = estadoCapacete;
     }
 
+    public void karate(){
+        System.out.println("HA!");
+        System.out.println("HA!");
+        System.out.println("HA!");
+    }
+
     public void abrirAsas(){
         if (getEstadoAsas() == false){
             System.out.println("Asas abertas!");
@@ -65,13 +71,14 @@ public class BuzzLightyear {
         System.out.println("Atenção, mirando!!!");
         TimeUnit.SECONDS.sleep(2);
         System.out.println("Laser dispado!!!");
+        System.out.println("Alvo eliminado.");
     }
 
     public void falas() {
         Random r = new Random();
         int i = r.nextInt(6);
 
-        System.out.println(i);
+        //System.out.println(i);
 
         if (i == 0) {
             System.out.println("Ao infinito... e além!");
@@ -89,7 +96,7 @@ public class BuzzLightyear {
             System.out.println("To infinity... and beyond!");
         }
         else if (i == 5) {
-            System.out.println("outra frase");
+            System.out.println("Ao infinito... e além!");
         }
         else{
             return;
